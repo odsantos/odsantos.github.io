@@ -7,7 +7,7 @@ export default function Home() {
         <Container>
           <h1 className="display-4">Welcome to My Portfolio</h1>
           <p className="lead">
-            I'm a passionate developer building web applications.
+            I&apos;m a passionate developer building web applications.
           </p>
           <hr className="my-4" />
           <p>
