@@ -1,95 +1,157 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import { Container } from 'react-bootstrap';
 
 export default function Home() {
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol>
-          <li>
-            Get started by editing <code>src/app/page.js</code>.
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <main>
+      <div className="bg-light p-5 rounded-lg m-3">
+        <Container>
+          <h1 className="display-4">Welcome to My Portfolio</h1>
+          <p className="lead">
+            I'm a passionate developer building web applications.
+          </p>
+          <hr className="my-4" />
+          <p>
+            This portfolio is a showcase of my skills and projects.
+          </p>
+          <a className="btn btn-primary btn-lg" href="#projects">
+            View My Work
+          </a>
+        </Container>
+      </div>
 
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.secondary}
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className={styles.footer}>
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+      {/* About Section */}
+      <div id="about" className="py-5">
+        <Container>
+          <div className="row">
+            <div className="col-lg-6">
+              <h2 className="display-5">About Me</h2>
+              <p className="lead">
+                I am a software developer with a passion for creating elegant and efficient solutions. My journey in the world of programming
+                started with a curiosity for how things work, and it has grown
+                into a fulfilling career.
+              </p>
+              <p>
+                I have experience with JavaScript, and I am currently learning
+                React and Node.js to expand my skills. I am always eager to
+                learn new things and take on new challenges.
+              </p>
+            </div>
+            <div className="col-lg-6 d-flex align-items-center">
+              <img
+                src="/profile-photo.jpg"
+                alt="Osvaldo Santos"
+                className="img-fluid rounded-circle"
+              />
+            </div>
+          </div>
+        </Container>
+      </div>
+
+      {/* Projects Section */}
+      <div id="projects" className="py-5 bg-light">
+        <Container>
+          <h2 className="display-5 text-center mb-5">My Projects</h2>
+          <div className="row">
+            <div className="col-md-4">
+              <div className="card mb-4 shadow-sm">
+                <img
+                  src="/file-organizer-pro.jpg"
+                  alt="File Organizer Pro"
+                  className="card-img-top"
+                />
+                <div className="card-body">
+                  <h5 className="card-title">File Organizer Pro</h5>
+                  <p className="card-text">
+                    A simple yet powerful Python script to automatically organize files in a directory based on their extension. A practical tool designed for ease of use.
+                  </p>
+                  <a href="https://odsantos.github.io/file-organizer-script" target="_blank" rel="noopener noreferrer" className="btn btn-primary">
+                    View Project
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div className="col-md-4">
+              <div className="card mb-4 shadow-sm">
+                <img
+                  src="/text-cleaner.jpeg"
+                  alt="Text Cleaner"
+                  className="card-img-top"
+                />
+                <div className="card-body">
+                  <h5 className="card-title">Text Cleaner</h5>
+                  <p className="card-text">
+                    A simple and efficient web tool to clean up text. It can remove extra spaces, line breaks, and other unwanted characters, making it easy to format text for different uses.
+                  </p>
+                  <a href="https://odsantos.github.io/text-cleaner/" target=
+     "_blank" rel="noopener noreferrer" className="btn btn-primary">
+                    View Project
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div className="col-md-4">
+              <div className="card mb-4 shadow-sm">
+                <img
+                  src="/bookmark-cleaner.jpeg"
+                  alt="Bookmark Cleaner"
+                  className="card-img-top"
+                />
+                <div className="card-body">
+                  <h5 className="card-title">Bookmark Cleaner</h5>
+                  <p className="card-text">
+                    A web application that checks a list of bookmarks for broken
+                    or redirected links. It features a clean user interface and a PHP-based API to process the links.
+                  </p>
+                  <a href="https://bookmark-cleaner.netlify.app/" target="_blank" rel="noopener noreferrer" className="btn btn-primary">
+                    View Project
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </Container>
+      </div>
+
+      {/* Contact Section */}
+      <div id="contact" className="py-5">
+        <Container>
+          <h2 className="display-5 text-center mb-5">Contact Me</h2>
+          <div className="row justify-content-center">
+            <div className="col-lg-6">
+              <p className="lead text-center mb-4">
+                Have a question or want to work together?
+              </p>
+              {/* Note: This is a static form and does not submit data. */}
+              <form>
+                <div className="form-group mb-3">
+                  <input
+                    type="text"
+                    className="form-control"
+                    placeholder="Your Name"
+                  />
+                </div>
+                <div className="form-group mb-3">
+                  <input
+                    type="email"
+                    className="form-control"
+                    placeholder="Your Email"
+                  />
+                </div>
+                <div className="form-group mb-3">
+                  <textarea
+                    className="form-control"
+                    rows="5"
+                    placeholder="Your Message"
+                  ></textarea>
+                </div>
+                <button type="submit" className="btn btn-primary w-100">
+                  Submit
+                </button>
+              </form>
+            </div>
+          </div>
+        </Container>
+      </div>
+    </main>
   );
 }
