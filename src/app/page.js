@@ -37,7 +37,7 @@ export default function Home() {
               </p>
             </div>
             <div className="col-lg-6 d-flex align-items-center justify-content-center">
-              <div style={{ maxWidth: '300px' }}>
+              <div style={{ maxWidth: '250px' }}>
                 <img
                   src="/profile-photo.jpg"
                   alt="Osvaldo Santos"
@@ -53,58 +53,58 @@ export default function Home() {
       <div id="projects" className="py-5 bg-light">
         <Container>
           <h2 className="display-5 text-center mb-5">My Projects</h2>
-          <div className="row">
-            <div className="col-md-4">
-              <div className="card mb-4 shadow-sm">
+          <div className="row align-items-stretch">
+            <div className="col-md-4 d-flex">
+              <div className="card mb-4 shadow-sm d-flex flex-column">
                 <img
                   src="/file-organizer-pro.jpg"
                   alt="File Organizer Pro"
                   className="card-img-top"
                 />
-                <div className="card-body">
+                <div className="card-body d-flex flex-column justify-content-between">
                   <h5 className="card-title">File Organizer Pro</h5>
                   <p className="card-text">
                     A simple yet powerful Python script to automatically organize files in a directory based on their extension. A practical tool designed for ease of use.
                   </p>
-                  <a href="https://odsantos.github.io/file-organizer-script" target="_blank" rel="noopener noreferrer" className="btn btn-primary">
+                  <a href="https://odsantos.github.io/file-organizer-script" target="_blank" rel="noopener noreferrer" className="btn btn-primary mt-auto">
                     View Project
                   </a>
                 </div>
               </div>
             </div>
-            <div className="col-md-4">
-              <div className="card mb-4 shadow-sm">
+            <div className="col-md-4 d-flex">
+              <div className="card mb-4 shadow-sm d-flex flex-column">
                 <img
                   src="/text-cleaner.jpeg"
                   alt="Text Cleaner"
                   className="card-img-top"
                 />
-                <div className="card-body">
+                <div className="card-body d-flex flex-column justify-content-between">
                   <h5 className="card-title">Text Cleaner</h5>
                   <p className="card-text">
                     A simple and efficient web tool to clean up text. It can remove extra spaces, line breaks, and other unwanted characters, making it easy to format text for different uses.
                   </p>
                   <a href="https://odsantos.github.io/text-cleaner/" target=
-     "_blank" rel="noopener noreferrer" className="btn btn-primary">
+     "_blank" rel="noopener noreferrer" className="btn btn-primary mt-auto">
                     View Project
                   </a>
                 </div>
               </div>
             </div>
-            <div className="col-md-4">
-              <div className="card mb-4 shadow-sm">
+            <div className="col-md-4 d-flex">
+              <div className="card mb-4 shadow-sm d-flex flex-column">
                 <img
                   src="/bookmark-cleaner.jpeg"
                   alt="Bookmark Cleaner"
                   className="card-img-top"
                 />
-                <div className="card-body">
+                <div className="card-body d-flex flex-column justify-content-between">
                   <h5 className="card-title">Bookmark Cleaner</h5>
                   <p className="card-text">
                     A web application that checks a list of bookmarks for broken
                     or redirected links. It features a clean user interface and a PHP-based API to process the links.
                   </p>
-                  <a href="https://bookmark-cleaner.netlify.app/" target="_blank" rel="noopener noreferrer" className="btn btn-primary">
+                  <a href="https://bookmark-cleaner.netlify.app/" target="_blank" rel="noopener noreferrer" className="btn btn-primary mt-auto">
                     View Project
                   </a>
                 </div>
@@ -119,7 +119,7 @@ export default function Home() {
         <Container>
           <div className="row justify-content-center">
             <div className="col-lg-6">
-              <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc-TAzxFemO5a39d3PDdIRrsqzq50TxJ-bNICVgu9_tXxphSg/viewform?embedded=true" width="640" height="1000" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+              <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc-TAzxFemO5a39d3PDdIRrsqzq50TxJ-bNICVgu9_tXxphSg/viewform?embedded=true" width="640" height="850" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
             </div>
           </div>
         </Container>
