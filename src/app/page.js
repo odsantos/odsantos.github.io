@@ -31,17 +31,19 @@ export default function Home() {
                 into a fulfilling career.
               </p>
               <p>
-                I have experience with JavaScript, and I am currently learning
+                I have experience with JavaScript, PHP, and I am currently learning
                 React and Node.js to expand my skills. I am always eager to
                 learn new things and take on new challenges.
               </p>
             </div>
-            <div className="col-lg-6 d-flex align-items-center">
-              <img
-                src="/profile-photo.jpg"
-                alt="Osvaldo Santos"
-                className="img-fluid rounded-circle"
-              />
+            <div className="col-lg-6 d-flex align-items-center justify-content-center">
+              <div style={{ maxWidth: '300px' }}>
+                <img
+                  src="/profile-photo.jpg"
+                  alt="Osvaldo Santos"
+                  className="img-fluid rounded-circle"
+                />
+              </div>
             </div>
           </div>
         </Container>
@@ -115,13 +117,9 @@ export default function Home() {
       {/* Contact Section */}
       <div id="contact" className="py-5">
         <Container>
-          <h2 className="display-5 text-center mb-5">Contact Me</h2>
           <div className="row justify-content-center">
             <div className="col-lg-6">
-              <p className="lead text-center mb-4">
-                Have a question or want to work together?
-              </p>
-              <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc-TAzxFemO5a39d3PDdIRrsqzq50TxJ-bNICVgu9_tXxphSg/viewform?embedded=true" width="640" height="741" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+              <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc-TAzxFemO5a39d3PDdIRrsqzq50TxJ-bNICVgu9_tXxphSg/viewform?embedded=true" width="640" height="1000" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
             </div>
           </div>
         </Container>
