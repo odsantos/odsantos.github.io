@@ -35,6 +35,9 @@ export default function Home() {
                 React and Node.js to expand my skills. I am always eager to
                 learn new things and take on new challenges.
               </p>
+              <a href="https://www.linkedin.com/in/osvaldods/" target="_blank" rel="noopener noreferrer" className="btn btn-info mt-3">
+                View LinkedIn Profile
+              </a>
             </div>
             <div className="col-lg-6 d-flex align-items-center justify-content-center">
               <div style={{ maxWidth: '250px' }}>
