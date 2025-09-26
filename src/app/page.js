@@ -121,7 +121,7 @@ export default function Home() {
               <p className="lead text-center mb-4">
                 Have a question or want to work together?
               </p>
-              <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc-TAzxFemO5a39d3PDlRrsqzq50TxJ-bNICVgu9_tXxphSg/viewform?embedded=true" width="640" height="741" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+              <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc-TAzxFemO5a39d3PDdIRrsqzq50TxJ-bNICVgu9_tXxphSg/viewform?embedded=true" width="640" height="741" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
             </div>
           </div>
         </Container>
