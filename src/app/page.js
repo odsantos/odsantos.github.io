@@ -122,7 +122,7 @@ export default function Home() {
         <Container>
           <div className="row justify-content-center">
             <div className="col-lg-6">
-              <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc-TAzxFemO5a39d3PDdIRrsqzq50TxJ-bNICVgu9_tXxphSg/viewform?embedded=true" width="640" height="850" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+              <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc-TAzxFemO5a39d3PDdIRrsqzq50TxJ-bNICVgu9_tXxphSg/viewform?embedded=true" width="640" height="877" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
             </div>
           </div>
         </Container>
