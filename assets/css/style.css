@@ -1,0 +1,119 @@
+:root {
+  --bs-font-sans-serif: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans","Liberation Sans",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  /* Light Theme (Cobalt-based) */
+  --background-primary: #f0f4f8; /* Very light blue-gray */
+  --background-primary-gradient: linear-gradient(to bottom right, #f0f4f8, #e0e7ed); /* Subtle gradient for light theme */
+  --background-secondary: #e0e7ed; /* Light blue-gray */
+  --text-primary: #1a2a3a; /* Dark blue-gray for text */
+  --text-secondary: #4a6a8a; /* Medium blue-gray for secondary text */
+  --accent-color: #0047ab; /* Classic Cobalt Blue */
+  --card-background: #ffffff; /* White cards */
+  --card-border: #c0d0e0; /* Light blue border */
+  --nav-background: #003366; /* Darker Cobalt for nav */
+  --nav-text: #e0e7ed; /* Light text for nav */
+  --nav-text-hover: #ffffff; /* White text on hover for nav */
+  --navbar-brand-color: #ffffff; /* White for brand in light nav */
+  --theme-switcher-border: var(--nav-text); /* Border color for switcher */
+  --theme-switcher-color: var(--nav-text); /* Color for emoji */
+  --theme-switcher-hover-border: var(--nav-text-hover); /* Hover border color */
+  --theme-switcher-hover-color: var(--nav-text-hover); /* Hover emoji color */
+  --theme-switcher-hover-bg-cobalt: #0047ab; /* Cobalt for hover background */
+}
+
+body.dark-theme {
+  /* Dark Theme (Cobalt-based) */
+  --background-primary: #0a1a2a; /* Very dark blue */
+  --background-primary-gradient: linear-gradient(to bottom right, #0a1a2a, #1a2a3a); /* Subtle gradient for dark theme */
+  --background-secondary: #1a2a3a; /* Dark blue */
+  --text-primary: #e0e7ed; /* Light blue-gray for text */
+  --text-secondary: #8a9aaa; /* Muted light blue-gray for secondary text */
+  --accent-color: #3b82f6; /* Brighter blue for accent */
+  --card-background: #1a2a3a; /* Dark blue cards */
+  --card-border: #2a3a4a; /* Slightly lighter dark blue border */
+  --nav-background: #0a1a2a; /* Very dark blue for nav */
+  --nav-text: #8a9aaa; /* Muted light text for nav */
+  --nav-text-hover: #ffffff; /* White text on hover for nav */
+  --navbar-brand-color: #ffffff; /* White for brand in dark nav */
+  --theme-switcher-border: var(--nav-text); /* Border color for switcher */
+  --theme-switcher-color: var(--nav-text); /* Color for emoji */
+  --theme-switcher-hover-border: var(--nav-text-hover); /* Hover border color */
+  --theme-switcher-hover-color: var(--nav-text-hover); /* Hover emoji color */
+  --theme-switcher-hover-bg-cobalt: #3b82f6; /* Brighter Cobalt for hover background in dark mode */
+}
+
+body {
+  font-family: var(--bs-font-sans-serif);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: var(--background-primary-gradient); /* Use gradient for background */
+  color: var(--text-primary);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.navbar {
+    background-color: var(--nav-background) !important;
+}
+
+.navbar-brand {
+    color: var(--navbar-brand-color) !important; /* Apply brand color */
+}
+
+.nav-link {
+    color: var(--nav-text) !important;
+}
+
+.nav-link:hover {
+    color: var(--nav-text-hover) !important;
+}
+
+.hero-section {
+    background-color: var(--background-secondary);
+    padding: 5rem 1.5rem;
+    border-radius: .3rem;
+    color: var(--text-primary);
+}
+
+.projects-section {
+    background-color: var(--background-secondary);
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.card {
+  height: 100%; /* Ensure cards in a row have equal height */
+  background-color: var(--card-background);
+  border-color: var(--card-border);
+  color: var(--text-primary);
+}
+
+.card-img-top {
+  width: 100%;
+  height: 180px; /* Adjust as needed */
+  object-fit: cover;
+}
+
+.btn-primary {
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+}
+
+.theme-switcher-btn {
+    background-color: transparent; /* Remove background */
+    border: none; /* Remove border */
+    color: var(--theme-switcher-color); /* Color of the emoji */
+    transition: all 0.3s ease; /* Smooth transitions for all properties */
+}
+
+.theme-switcher-btn:hover {
+    background-color: var(--theme-switcher-hover-bg-cobalt); /* Background on hover, using new Cobalt color */
+    border-color: var(--theme-switcher-hover-bg-cobalt); /* Border color on hover */
+    color: var(--theme-switcher-hover-color); /* Emoji color on hover */
+}
